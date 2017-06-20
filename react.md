@@ -20,3 +20,5 @@ freeValue 最直观的使用场景是，一个表单，即做编辑表单也做�
 
 freeValue 要有 reset 配合，且要支持 limit
 reset 指的是这个功能 http://www.w3school.com.cn/jsref/met_form_reset.asp
+
+如果实现了 freeValue 可以不实现 defaultValue
