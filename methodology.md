@@ -72,3 +72,11 @@ test(
     ]
 )
 ```
+
+## 分层
+
+> Interface = `Server data` + `UI Data` + `render() `
+
+`UI Data` = filter(ServerData) + fill(UI Content)
+
+将程序设计分为  `Server data` `UI Data` `render()`  并封装 `UI Data` 的逻辑处理代码，可以将复杂的问题简单化。
