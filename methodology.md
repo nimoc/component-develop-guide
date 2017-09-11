@@ -75,8 +75,10 @@ test(
 
 ## 分层
 
-> Interface = `Server data` + `UI Data` + `render() `
+> Interface = `Source data` + `UI Data` + `render() `
 
-`UI Data` = filter(ServerData) + fill(UI Content)
+`Source Data` = `Server Data` + `Client data`
 
-将程序设计分为  `Server data` `UI Data` `render()`  并封装 `UI Data` 的逻辑处理代码，可以将复杂的问题简单化。
+`UI Data` = filter(SourceData) + fill(SourceData)
+
+将程序设计分为  `Source data` `UI Data` `render()`  并封装 `UI Data` 的逻辑处理代码，可以将复杂的问题简单化。
