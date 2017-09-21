@@ -77,8 +77,10 @@ test(
 
 ```js
 Interface = render(
+    // UI data
     fill(
         format(
+            // Source data
             api(
                 ServerData,
                 ClientData
