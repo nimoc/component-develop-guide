@@ -75,9 +75,21 @@ test(
 
 ## 分层
 
-> Interface(DOM) = `Source data` + `UI Data` + `render() `
+```js
+Interface = render(
+    fill(
+        format(
+            api(
+                ServerData,
+                ClientData
+            )
+        )
+    )
+)
+```
+`Source data` + `UI Data` + `render() `
 
-`Source Data` = `api(ServerData,ClientData)`
+`Source Data` = `api(ServerData, ClientData)`
 
 `UI Data` = `format(SourceData)` + `fill(SourceData)`
 
