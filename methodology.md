@@ -75,7 +75,7 @@ test(
 
 ## 分层
 
-> Interface = `Source data` + `UI Data` + `render() `
+> Interface(DOM) = `Source data` + `UI Data` + `render() `
 
 `Source Data` = `api(ServerData,ClientData)`
 
@@ -83,4 +83,4 @@ test(
 
 将程序设计分为  `Source data` `UI Data` `render()`  并封装 `UI Data` 的逻辑处理代码，可以将复杂的问题简单化。
 
-`Get SourceData => UI Data => DOM => Event => api(...) => Update SourceData`
+`Get SourceData => UI Data => Interface(DOM) => Event => api(...) => Update SourceData`
