@@ -84,3 +84,5 @@ test(
 将程序设计分为  `Source data` `UI Data` `render()`  并封装 `UI Data` 的逻辑处理代码，可以将复杂的问题简单化。
 
 `Get SourceData => UI Data => Interface(DOM) => Event => api(...) => Update SourceData`
+
+> 如果因为项目迭代原因需要出现重复数据。则在 api 中 `get` 时复制出一份，但我们认为这个数据是不重复的，只是跟另外一个数据一模一样。在 api 中 `set` 要指明修改了谁，由 api 修改成功后返回 3份数据并更新 SourceData。**重复数据管理的复制和关联修改都在 api 中处理**
