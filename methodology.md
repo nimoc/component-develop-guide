@@ -77,8 +77,10 @@ test(
 
 > Interface = `Source data` + `UI Data` + `render() `
 
-`Source Data` = `Server Data` + `Client data`
+`Source Data` = `api(ServerData,ClientData)`
 
-`UI Data` = format(SourceData) + fill(SourceData)
+`UI Data` = `format(SourceData)` + `fill(SourceData)`
 
 将程序设计分为  `Source data` `UI Data` `render()`  并封装 `UI Data` 的逻辑处理代码，可以将复杂的问题简单化。
+
+`Get SourceData => UI Data => DOM => Event => api(...) => Update SourceData`
