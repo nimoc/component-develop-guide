@@ -100,3 +100,7 @@ Interface = render(
 `Get SourceData => UI Data => Interface(DOM) => Event => api(...) => Update SourceData`
 
 > 如果因为项目迭代原因需要出现重复数据。则在 api 中 `get` 时复制出一份，但我们认为这个数据是不重复的，只是跟另外一个数据一模一样。在 api 中 `set` 要指明修改了谁，由 api 修改成功后返回 3份数据并更新 SourceData。**重复数据管理的复制和关联修改都在 api 中处理**
+
+## 不要着急做到完美
+
+面对复杂的模块开发，先实现最基础的功能保证能解决目前会遇到的业务需求。然后实验一段时间，再次进行重构。
